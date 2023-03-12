@@ -12,7 +12,7 @@ Student.prototype.setSubject = function (subjectName) {
 
 Student.prototype.addMarks = function (...marksToAdd) {
   if ('marks' in this) {
-    Object.assign(this.marks, marksToAdd);
+    return this.marks.push(...marksToAdd);
   }
 }
 
