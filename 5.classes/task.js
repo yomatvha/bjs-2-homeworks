@@ -81,6 +81,10 @@ class Library {
         } else {
             return findBook;
         }
+
+        // const findResult = this.books.find((item) => item[type] === value);
+        // return findResult || null;
+        
     }
 
     giveBookByName(bookName) {
@@ -92,6 +96,11 @@ class Library {
             this.books.splice(findBookIndex, 1);
             return findBook;
         }
+
+        // const book = this.findBookBy("name", bookName);
+        // if (!book) return null;
+        // this.books = this.books.filter((item) => item.name !== bookName);
+        // return book;
     }
 }
 
