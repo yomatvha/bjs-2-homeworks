@@ -5,7 +5,7 @@ class AlarmClock {
 	}
 
     addClock(alarmTime, alarmAction) {
-      if (arguments.length < 2) {
+      if (alarmTime === null || alarmAction === null || arguments.length < 2) {
         throw new Error("Отсутствуют обязательные аргументы");
       }
 
